@@ -1,5 +1,9 @@
 /* Products List */
 
+body{
+  background-image: url(../img/background2.png);
+  background-size: 100% 100%;
+}
 .container_product_list {
     display: flex;
     justify-content: flex-start;

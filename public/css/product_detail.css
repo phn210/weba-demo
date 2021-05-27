@@ -1,5 +1,8 @@
 /* Product Detail */
-
+body{
+  background-image: url(../img/background2.png);
+  background-size: 100% 100%;
+}
 .product_directory {
   display: block;
   margin: 20px 12.5% 20px 12.5%;
@@ -95,7 +98,7 @@
 }
 
 .thumbnails img:hover {
-  border: 2px solid lightskyblue;
+  border: 2px solid rgb(186, 190, 192);
   cursor: pointer;
 }
 
@@ -171,7 +174,7 @@
   border-radius: 10%;
   border: none;
   cursor: pointer;
-  background-color: lightblue;
+  background-color: rgb(174, 176, 177);
 }
 
 .add_to_cart input {

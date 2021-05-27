@@ -1,7 +1,7 @@
 html,body {
   position: relative;
   font-size: 0.05855vw;
-  background: url(../image/logo/home_background.png);
+  background: url(../img/home/logo/home_background.png);
   background-size: contain;
   margin:0;
   padding:0;
@@ -161,7 +161,7 @@ html,body {
   width: 80rem;
   left: 125rem;
   top:1075rem;
-  background-image: url(../image/logo/laptop.png);
+  background-image: url(../img/home/logo/laptop.png);
   background-color: rgb(228, 227, 227);
   background-size: contain;
   border-radius: 50%;
@@ -176,7 +176,7 @@ html,body {
   width: 80rem;
   left: 125rem;
   top:1075rem;
-  background-image: url(../image/logo/laptop.png);
+  background-image: url(../img/home/logo/laptop.png);
   background-color: rgb(228, 227, 227);
   background-size: contain;
   border-radius: 50%;
@@ -193,7 +193,7 @@ html,body {
   width: 80rem;
   left: 175rem;
   top:1175rem;
-  background-image: url(../image/logo/phone.png);
+  background-image: url(../img/home/logo/phone.png);
   background-color: rgb(228, 227, 227);
   background-size: contain;
   border-radius: 50%;
@@ -208,7 +208,7 @@ html,body {
   width: 80rem;
   left: 175rem;
   top:1175rem;
-  background-image: url(../image/logo/phone.png);
+  background-image: url(../img/home/logo/phone.png);
   background-color: rgb(228, 227, 227);
   background-size: contain;
   border-radius: 50%;
@@ -224,7 +224,7 @@ html,body {
   width: 80rem;
   left: 125rem;
   top: 1275rem;
-  background-image: url(../image/logo/design.png);
+  background-image: url(../img/home/logo/design.png);
   background-color: rgb(228, 227, 227);
   background-size: contain;
   border-radius: 50%;
@@ -239,7 +239,7 @@ html,body {
   width: 80rem;
   left: 125rem;
   top: 1275rem;
-  background-image: url(../image/logo/design.png);
+  background-image: url(../img/home/logo/design.png);
   background-color: rgb(228, 227, 227);
   background-size: contain;
   border-radius: 50%;
