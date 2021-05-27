@@ -1,154 +1,167 @@
-#home-container {
-  width: 100%;
-  max-height: 1000px;
-  font-size: 1px;
-  margin: 0;
-  padding: 0;
+html,body {
+  position: relative;
+  font-size: 0.05855vw;
+  background: url(../image/logo/home_background.png);
+  background-size: contain;
+  margin:0;
+  padding:0;
+  height: 200vh;
+  width: 100vw;
+}
+.container {
+  font-size: 0.05855vw;
+  min-height:100%;
+  position:relative;
+  width: 100vw;
+}
+.hello{
+  position:absolute;
+  z-index: 1;
+}
+#footer {
+  /*padding-left: 50rem;*/
+  position:absolute;
+  bottom:0;
+  left: 30rem;
+  padding-bottom: 30rem;
+  height:100rem;  
+}
+
+.facebook_logo{
+  left: 150rem;
+  width: 70rem;
+  height: 70rem;
+  position: relative;
+}
+.youtube_logo{
+  left: 175rem;
+  width: 70rem;
+  height: 70rem;
   position: relative;
 }
 
-#home-container * {
-  box-sizing: border-box
+.map{
+  border: 5rem #383535;
+  padding: 7rem;
+  width: 350rem;
+  height: 350rem;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  top: 1750rem;
+  right: 150rem;
+  position: absolute;
 }
 
-
+* {box-sizing:border-box}
 /* thiết lập style cho slideshow container */
+.slideshow-container {
+   padding-top: 200rem;
+   left: 23vw;
+   width: 50vw;
+   position: relative;
+ }
 
-#home-container .slideshow-container {
-  padding-top: 175rem;
-  max-width: 1025rem;
+#hello
+{
+  padding-top: 200rem;
+  left: 23vw;
+  width: 50vw;
   position: relative;
-  margin: auto;
 }
-
 
 /* ẩn hình ảnh cho phần tử slideshow */
-
-#home-container .mySlides {
-  display: none;
-}
-
-#home-container .mySlides:hover {
+ .mySlides {
+   display: none;
+ }
+ .mySlides:hover{
   display: none;
   transform: scale(1.1);
-}
-
-
+ }
 /* thiết kế nút mũi tên*/
-
-#home-container .prev,
-.next {
-  display: none;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22rem;
-  padding: 16rem;
-  color: white;
-  font-weight: bold;
-  font-size: 18rem;
-  transition: 0.6s ease;
-  border-radius: 0 3rem 3rem 0;
-  user-select: none;
-}
-
-
+ .prev, .next {
+   cursor: pointer;
+   position: absolute;
+   top: 50%;
+   width: auto;
+   margin-top: -22rem;
+   padding: 16rem;
+   color: white;
+   font-weight: bold;
+   font-size: 18rem;
+   transition: 0.6s ease;
+   border-radius: 0 3rem 3rem 0;
+   user-select: none;
+ }
 /* thiết kế nút mũi tên next nằm phía bên phải */
-
-#home-container .next {
-  right: 0;
-  border-radius: 3rem 0 0 3rem;
-}
-
-
+ .next {
+   right: 0;
+   border-radius: 3rem 0 0 3rem;
+ }
 /* hiệu ứng thay đổi background khi hover vào nút mũi tên*/
-
-#home-container .prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  transform: scale(1.2);
-}
-
-
+ .prev:hover, .next:hover {
+   background-color: rgba(0,0,0,0.8);
+   transform: scale(1.2);
+ }
 /* Thiết lập style cho nội dung của mỗi phần tử slideshow */
-
-#home-container .text {
-  color: #f2f2f2;
-  font-size: 15rem;
-  padding: 8rem 12rem;
-  position: absolute;
-  bottom: 8rem;
-  width: 100%;
-  text-align: center;
-}
-
-
+ .text {
+   color: #f2f2f2;
+   font-size: 15rem;
+   padding: 8rem 12rem;
+   position: absolute;
+   bottom: 8rem;
+   width: 100%;
+   text-align: center;
+ }
 /* Thiết lập style cho số hiển thị của phần tử */
-
-#home-container .numbertext {
-  color: #f2f2f2;
-  font-size: 12rem;
-  padding: 8rem 12rem;
-  position: absolute;
-  top: 0;
-}
-
-
+ .numbertext {
+   color: #f2f2f2;
+   font-size: 12rem;
+   padding: 8rem 12rem;
+   position: absolute;
+   top: 0;
+ }
 /* thiết lập style  nút tròn điều khiển*/
-
-#home-container .dot {
-  cursor: pointer;
-  height: 15rem;
-  width: 15rem;
-  margin: 0 2rem;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-#home-container .active,
-.dot:hover {
-  background-color: #717171;
-  transform: scale(1.1);
-}
-
-
+ .dot {
+   cursor: pointer;
+   height: 15rem;
+   width: 15rem;
+   margin: 0 2rem;
+   background-color: #bbb;
+   border-radius: 50%;
+   display: inline-block;
+   transition: background-color 0.6s ease;
+ }
+.active, .dot:hover {
+   background-color: #717171;
+   transform: scale(1.1);
+ }
 /* tạo hiệu ứng chuyển động fade */
-
-#home-container .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 2s;
-  animation-name: fade;
-  animation-duration: 2s;
-}
-
+ .fade {
+   -webkit-animation-name: fade;
+   -webkit-animation-duration: 2s;
+   animation-name: fade;
+   animation-duration: 2s;
+ }
 @-webkit-keyframes fade {
-  from {
-    opacity: .4
-  }
-  to {
-    opacity: 1
-  }
-}
-
+   from {opacity: .4}
+   to {opacity: 1}
+ }
 @keyframes fade {
-  from {
-    opacity: .4
-  }
-  to {
-    opacity: 1
-  }
-}
+   from {opacity: .4}
+   to {opacity: 1}
+ }
 
-#home-container .laptop_button {
+
+
+
+.laptop_button{
   cursor: pointer;
   height: 80rem;
   width: 80rem;
   left: 125rem;
-  top: 1075rem;
-  background-image: url(../img/home/logo/laptop.png);
+  top:1075rem;
+  background-image: url(../image/logo/laptop.png);
   background-color: rgb(228, 227, 227);
   background-size: contain;
   border-radius: 50%;
@@ -157,13 +170,13 @@
   transition: background-color 0.6s ease;
 }
 
-#home-container .laptop_button:hover {
+.laptop_button:hover{
   cursor: pointer;
   height: 80rem;
   width: 80rem;
   left: 125rem;
-  top: 1075rem;
-  background-image: url(../img/home/logo/laptop.png);
+  top:1075rem;
+  background-image: url(../image/logo/laptop.png);
   background-color: rgb(228, 227, 227);
   background-size: contain;
   border-radius: 50%;
@@ -173,13 +186,14 @@
   transform: scale(1.2);
 }
 
-#home-container .phone_button {
+
+.phone_button{
   cursor: pointer;
   height: 80rem;
   width: 80rem;
   left: 175rem;
-  top: 1175rem;
-  background-image: url(../img/home/logo/phone.png);
+  top:1175rem;
+  background-image: url(../image/logo/phone.png);
   background-color: rgb(228, 227, 227);
   background-size: contain;
   border-radius: 50%;
@@ -188,13 +202,13 @@
   transition: background-color 0.6s ease;
 }
 
-#home-container .phone_button:hover {
+.phone_button:hover{
   cursor: pointer;
   height: 80rem;
   width: 80rem;
   left: 175rem;
-  top: 1175rem;
-  background-image: url(../img/home/logo/phone.png);
+  top:1175rem;
+  background-image: url(../image/logo/phone.png);
   background-color: rgb(228, 227, 227);
   background-size: contain;
   border-radius: 50%;
@@ -204,13 +218,13 @@
   transform: scale(1.2);
 }
 
-#home-container .design_button {
+.design_button{
   cursor: pointer;
   height: 80rem;
   width: 80rem;
   left: 125rem;
   top: 1275rem;
-  background-image: url(../img/home/logo/design.png);
+  background-image: url(../image/logo/design.png);
   background-color: rgb(228, 227, 227);
   background-size: contain;
   border-radius: 50%;
@@ -219,13 +233,13 @@
   transition: background-color 0.6s ease;
 }
 
-#home-container .design_button:hover {
+.design_button:hover{
   cursor: pointer;
   height: 80rem;
   width: 80rem;
   left: 125rem;
   top: 1275rem;
-  background-image: url(../img/home/logo/design.png);
+  background-image: url(../image/logo/design.png);
   background-color: rgb(228, 227, 227);
   background-size: contain;
   border-radius: 50%;
@@ -235,120 +249,118 @@
   transform: scale(1.2);
 }
 
-#home-container .contain_button_buynow {
+.contain_button_buynow {
   text-align: center;
   padding-top: 20rem;
 }
 
-#home-container .button1 {
-  background-color: white;
-  color: black;
+.button1 {
+  background-color: white; 
+  color: black; 
   border: 2rem solid #4CAF50;
 }
 
-#home-container .button1:hover {
+.button1:hover {
   background-color: #4CAF50;
   color: white;
 }
 
-#home-container .button_buynow {
+.button_buynow {
   width: 300rem;
   height: 100rem;
   background-color: transparent;
-  border: none;
-  background-image: url(../img/home/logo/buy_now.png);
+  border:none;
+  background-image: url(../image/logo/buy_now.png);
   background-size: contain;
-  background-repeat: no-repeat;
+  background-repeat:no-repeat;
   transition: ease-in;
 }
-
-#home-container .button_buynow:hover {
+.button_buynow:hover {
   width: 300rem;
   height: 100rem;
   background-color: transparent;
-  border: none;
-  background-image: url(../img/home/logo/buy_now.png);
+  border:none;
+  background-image: url(../image/logo/buy_now.png);
   background-size: contain;
-  background-repeat: no-repeat;
+  background-repeat:no-repeat;
   transition: ease-in;
   transform: scale(1.1);
 }
 
-#home-container .slideshow-container-top1 {
-  border-radius: 6rem;
+.slideshow-container-top1 {
+  border-radius:6rem;
   padding-top: 300rem;
   width: 250rem;
   position: relative;
-  padding-left: 430rem;
-  width: 675rem;
+  padding-left: 400rem;
+  width: 640rem;
   margin: auto;
   float: left;
 }
-
-#home-container .mySlides-top1 {
+.mySlides-top1 {
   display: none;
 }
 
-#home-container .mySlides-top1:hover {
+.mySlides-top1:hover {
   display: none;
   transform: scale(1.1);
 }
 
-#home-container .slideshow-container-top2 {
-  border-radius: 6rem;
+.slideshow-container-top2 {
+  border-radius:6rem;
   padding-top: 250rem;
   padding-left: 50rem;
   width: 295rem;
   position: relative;
   float: left;
-}
 
-#home-container .mySlides-top2 {
+}
+.mySlides-top2 {
   display: none;
 }
 
-#home-container .mySlides-top2:hover {
+.mySlides-top2:hover {
   display: none;
   transform: scale(1.1);
 }
 
-#home-container .slideshow-container-top3 {
-  border-radius: 6rem;
+.slideshow-container-top3 {
+  border-radius:6rem;
   padding-top: 300rem;
   padding-left: 50rem;
   width: 295rem;
   position: relative;
   float: left;
-}
 
-#home-container .mySlides-top3 {
+}
+.mySlides-top3 {
   display: none;
 }
-
-#home-container .mySlides-top3:hover {
+.mySlides-top3:hover{
   display: none;
   transform: scale(1.1);
 }
 
-#home-container .text_top {
+.text_top{
   clear: both;
-  text-align: center;
+  text-align : center;
   top: 1500rem;
   left: 450rem;
   position: absolute;
 }
 
-#home-container h1 {
+
+h1 { 
   display: block;
-  font-size: 36rem;
+  font-size: 60rem;
   margin-top: 16rem;
   margin-bottom: 16rem;
-  margin-left: 0;
+  margin-left: 250rem;
   margin-right: 0;
   font-weight: bold;
 }
 
-#home-container h2 {
+h2 {
   display: block;
   font-size: 24rem;
   margin-top: 14rem;
@@ -358,7 +370,7 @@
   font-weight: bold;
 }
 
-#home-container h3 {
+h3 { 
   display: block;
   font-size: 12rem;
   margin-top: 12rem;
@@ -369,6 +381,6 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-#home-container .text_top {
-  font-family: 'Pacifico', cursive;
+.text_top{
+  font-family:'Pacifico', cursive;
 }
